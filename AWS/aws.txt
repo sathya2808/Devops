@@ -1,0 +1,30 @@
+to increase volume in existing instance
+ if instance is in stopped state automatically volume will bve increased after below steps.
+ 1. go instance->storage->volume->modify 
+ 2. add volume size
+ 
+ 
+ if instances in running state
+ 1. go instance->storage->volume->modify 
+ 2. add volume size
+ 3. login to instance and use the         command :lsblk
+ 4.command to see filesystem and type 
+ cmd: df -Th
+ cmd to execute
+   1.cmd:  growpart filesystem
+   2. cmd: xfs_growfs filesystem
+   TO CHECK 
+   cmd: lsblk
+    
+    
+    
+To add volume 
+
+1. create volume with desired size
+   cmd: df -Th
+   cmd: sudo lsblk -f
+   cmd: sudo mkfs -t xfs /dev/xvdb
+   cmd: sudo mount /dev/xvdb /mnt
+   cmd: lsblk
+ TO unmount 
+  cmd: umount -f /mnt
