@@ -1,0 +1,26 @@
+TO create user
+
+CMD: useradd username
+
+To set password to created user
+
+cmd: passwd username
+
+to create group in linux
+
+cmd: groupadd groupname
+
+TO add user in group
+
+cmd: usermod -a -G groupname username
+
+TO change file permissions
+
+cmd: chmod 777 filename
+
+To change owner permission
+
+cmd: chown username groupname filename
+
+A
+ 
