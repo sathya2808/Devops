@@ -22,5 +22,8 @@ To change owner permission
 
 cmd: chown username groupname filename
 
-A
+To copy file 
+
+cmd: cp oldfile newfile
+
  
